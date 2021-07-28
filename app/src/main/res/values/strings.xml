@@ -6,6 +6,10 @@
 
     <!-- Text -->
     <string name="text_masuk">Masuk</string>
+    <string name="text_home">Beranda</string>
+    <string name="text_profile">Profil</string>
+    <string name="text_history">Riwayat</string>
+    <string name="text_setting">Pengaturan</string>
     <string name="loginSubtitle1">Silahkan,</string>
     <string name="loginSubtitle2">Masuk dengan akun Anda</string>
 
