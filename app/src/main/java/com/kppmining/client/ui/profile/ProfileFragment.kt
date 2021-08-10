@@ -16,6 +16,7 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentProfileBinding.inflate(layoutInflater, container, false)
+
         return binding.root
     }
 }

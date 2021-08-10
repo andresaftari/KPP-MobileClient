@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/drawable/line_green.xml" value="0.32456140350877194" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/component_testing.xml" value="0.1723684210526316" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/fragment_history.xml" value="0.16842105263157894" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/fragment_profile.xml" value="0.1723684210526316" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/fragment_setting.xml" value="0.17149122807017544" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/item_menu.xml" value="0.33" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/toolbar_home.xml" value="0.3109649122807018" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/toolbar_titled.xml" value="0.33" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/menu/menu_notification.xml" value="0.3109649122807018" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

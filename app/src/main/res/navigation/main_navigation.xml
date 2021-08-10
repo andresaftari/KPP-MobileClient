@@ -8,24 +8,20 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.kppmining.client.ui.home.HomeFragment"
-        android:label="Beranda"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.kppmining.client.ui.profile.ProfileFragment"
-        android:label="Profil"
         tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/navigation_history"
         android:name="com.kppmining.client.ui.history.HistoryFragment"
-        android:label="Riwayat"
         tools:layout="@layout/fragment_history" />
 
     <fragment
         android:id="@+id/navigation_setting"
         android:name="com.kppmining.client.ui.setting.SettingFragment"
-        android:label="Pengaturan"
         tools:layout="@layout/fragment_setting" />
 </navigation>
