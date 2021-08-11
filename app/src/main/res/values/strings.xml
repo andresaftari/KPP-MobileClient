@@ -19,4 +19,6 @@
     <!-- Button -->
     <string name="button_login">Masuk</string>
     <string name="text_hint_main">Silahkan pilih menu sesuai dengan keinginan.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

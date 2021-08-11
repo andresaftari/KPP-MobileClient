@@ -12,6 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KPPMobile">
+        <activity
+            android:name=".ui.simper.SimperActivity"
+            android:exported="true" />
         <activity android:name=".ui.auth.LoginActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
@@ -22,4 +25,5 @@
         </activity>
         <activity android:name=".MainActivity" />
     </application>
+
 </manifest>

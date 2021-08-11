@@ -7,7 +7,7 @@ import com.bumptech.glide.Glide
 import com.kppmining.client.databinding.ItemMenuBinding
 import com.kppmining.core.domain.model.Menus
 
-class MenuAdapter(val items: ArrayList<Menus>, var handler: (Int, Menus) -> Unit) :
+class MenuAdapter(private val items: ArrayList<Menus>, var handler: (Int, Menus) -> Unit) :
     RecyclerView.Adapter<MenuAdapter.MenuViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
         MenuViewHolder(
