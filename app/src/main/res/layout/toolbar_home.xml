@@ -29,7 +29,8 @@
             tools:text="Hi, Andzzz" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
             android:layout_height="match_parent">
 
             <ImageView

@@ -19,6 +19,14 @@
     <!-- Button -->
     <string name="button_login">Masuk</string>
     <string name="text_hint_main">Silahkan pilih menu sesuai dengan keinginan.</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="hint_fullname">Nama Lengkap</string>
+    <string name="hint_email">Alamat Email</string>
+    <string name="hint_address">Alamat Rumah</string>
+    <string name="hint_phone">Nomor Telepon</string>
+    <string name="text_save">Simpan</string>
+    <string name="text_saved">Data Berhasil <font fgcolor="#5BAE67">Disimpan</font> !</string>
 </resources>
