@@ -1,4 +1,4 @@
-package com.kppmining.client.ui.simper
+package com.kppmining.client.ui.permit
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,25 +10,25 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.google.android.material.snackbar.Snackbar
 import com.kppmining.client.MainActivity
-import com.kppmining.client.databinding.FragmentSimperBinding
+import com.kppmining.client.databinding.FragmentPermitBinding
 import com.kppmining.core.domain.model.DummyAccount
 
-class SimperFragment : Fragment() {
-    private lateinit var binding: FragmentSimperBinding
+class PermitFragment : Fragment() {
+    private lateinit var binding: FragmentPermitBinding
     private var name = DummyAccount()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentSimperBinding.inflate(layoutInflater, container, false)
+        binding = FragmentPermitBinding.inflate(layoutInflater, container, false)
         setHasOptionsMenu(true)
         returnUsername()
 
-        binding.btnSimper.setOnClickListener {
+        binding.btnPermit.setOnClickListener {
             Snackbar.make(
                 requireView(),
-                "Fitur pembuatan SIMPER masih dalam pengembangan",
+                "Fitur pembuatan Mine Permit masih dalam pengembangan",
                 Snackbar.LENGTH_SHORT
             ).show()
         }

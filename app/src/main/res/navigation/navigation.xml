@@ -4,15 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
     app:startDestination="@id/navigation_home">
+
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.kppmining.client.ui.home.HomeFragment"
-        android:label="HomeFragment"
         tools:layout="@layout/fragment_home">
 
         <action
             android:id="@+id/action_navigation_home_to_navigation_simper"
-            app:destination="@id/navigation_simper" />
+            app:destination="@id/navigation_simper"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_permit"
+            app:destination="@id/navigation_permit"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
         <argument
             android:name="name"
             app:argType="string"
@@ -42,4 +55,10 @@
         android:name="com.kppmining.client.ui.simper.SimperFragment"
         android:label="Simper"
         tools:layout="@layout/fragment_simper" />
+
+    <fragment
+        android:id="@+id/navigation_permit"
+        android:name="com.kppmining.client.ui.permit.PermitFragment"
+        android:label="Mine Permit"
+        tools:layout="@layout/fragment_permit"/>
 </navigation>

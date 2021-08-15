@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.auth.LoginActivity">
+    tools:context="com.kppmining.client.ui.auth.LoginActivity">
 
     <View
         android:id="@+id/separator"
@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/nunito_bold"
-                android:text="@string/loginSubtitle1"
+                android:text="@string/text_loginSubtitle1"
                 android:textColor="#19863E"
                 android:textSize="20sp" />
 
@@ -80,7 +80,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/nunito_regular"
-                android:text="@string/loginSubtitle2"
+                android:text="@string/text_loginSubtitle2"
                 android:textColor="#19863E" />
 
             <com.google.android.material.textfield.TextInputLayout

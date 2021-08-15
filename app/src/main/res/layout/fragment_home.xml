@@ -8,30 +8,22 @@
     <!-- Action Bar -->
     <include
         android:id="@+id/toolbar1"
-        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/toolbar_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        layout="@layout/toolbar_home" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Banner -->
-    <ImageView
-        android:id="@+id/iv_banner"
+    <com.afdhal_fa.imageslider.ImageSlider
+        android:id="@+id/ivSlider"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:layout_marginTop="8dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/banner"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar1"
-        tools:ignore="ContentDescription" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="118dp"
-        android:layout_marginTop="8dp"
-        android:alpha="0.6"
-        android:background="@color/black"
+        app:iss_auto_cycle="true"
+        app:iss_delay="0"
+        app:iss_image_scaleType="centerCrop"
+        app:iss_with_background="false"
+        app:iss_title_gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar1" />
@@ -49,7 +41,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_banner" />
+        app:layout_constraintTop_toBottomOf="@id/ivSlider" />
 
     <View
         android:id="@+id/line"

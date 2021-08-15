@@ -4,6 +4,16 @@
     <!-- Hint -->
     <string name="hint_username">Nama Pengguna</string>
     <string name="hint_password">Kata Sandi</string>
+    <string name="hint_fullname">Nama Lengkap</string>
+    <string name="hint_email">Alamat Email</string>
+    <string name="hint_address">Alamat Rumah</string>
+    <string name="hint_phone">Nomor Telepon</string>
+
+    <string name="hint_simper">Yuk Buat Simper!</string>
+    <string name="hint_createSimper">Anda Ingin membuat Simper? Klik di bawah ini</string>
+
+    <string name="hint_permit">Yuk Buat Mine Permit!</string>
+    <string name="hint_createPermit">Anda Ingin membuat Mine Permit? Klik di bawah ini</string>
 
     <!-- Text -->
     <string name="text_masuk">Masuk</string>
@@ -11,22 +21,73 @@
     <string name="text_profile">Profil</string>
     <string name="text_history">Riwayat</string>
     <string name="text_setting">Pengaturan</string>
-    <string name="loginSubtitle1">Silahkan,</string>
-    <string name="loginSubtitle2">Masuk dengan akun Anda</string>
     <string name="text_menu">Menu</string>
     <string name="text_notif">Notifikasi</string>
+    <string name="text_permit">Mine Permit</string>
+    <string name="text_privacy">Kebijakan Privasi</string>
+    <string name="text_about">Tentang KPP</string>
+    <string name="text_simper">SIMPER</string>
+
+    <string name="text_loginSubtitle1">Silahkan,</string>
+    <string name="text_loginSubtitle2">Masuk dengan akun Anda</string>
+    <string name="text_simperSubtitleBanner">Jurusan D3 Teknik Sipil, berumur 20–35 tahun, pengalaman minimal 1 tahun</string>
+
+    <string name="text_hint_main">Silahkan pilih menu sesuai dengan keinginan.</string>
+    <string name="text_hint_simper">SIMPER merupakan hal yang wajib dipunyai oleh setiap karyawan. Pahami alur pembuatan SIMPER ya! </string>
+    <string name="text_hint_permit">Mine Permit merupakan hal yang wajib dipunyai oleh setiap karyawan. Pahami alur pembuatan Mine Permit, ya!</string>
+
+    <string name="text_simper_title">SIMPER\n(Surat Izin Mengemudi Perusahaan)</string>
+    <string name="text_simper_subtitle">Mengemudi menjadi aman dan nyaman</string>
+    <string name="text_permit_subtitle">Ingin memasuki area tambang? Pakai Maine Permit, ya!</string>
+
+    <string name="text_saved">Data Berhasil <font fgcolor="#5BAE67">Disimpan</font> !</string>
+    <string name="text_clearing"><font fgcolor="#FF0000">Hapus</font> Riwayat Aktivitas?</string>
+
+    <string name="text_clearHistory">Hapus Semua Riwayat</string>
 
     <!-- Button -->
+    <string name="button_buat">Buat</string>
     <string name="button_login">Masuk</string>
-    <string name="text_hint_main">Silahkan pilih menu sesuai dengan keinginan.</string>
+    <string name="button_simpan">Simpan</string>
+    <string name="button_logout">Keluar</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Array -->
+    <string-array name="banner_thumb">
+        <item>@drawable/banner</item>
+        <item>@drawable/banner_simper</item>
+        <item>@drawable/banner_mine</item>
+    </string-array>
 
-    <string name="hint_fullname">Nama Lengkap</string>
-    <string name="hint_email">Alamat Email</string>
-    <string name="hint_address">Alamat Rumah</string>
-    <string name="hint_phone">Nomor Telepon</string>
-    <string name="text_save">Simpan</string>
-    <string name="text_saved">Data Berhasil <font fgcolor="#5BAE67">Disimpan</font> !</string>
+    <string-array name="banner_title">
+        <item>Informasi Magang</item>
+        <item>SIMPER\n(Surat Izin Mengemudi Perusahaan)</item>
+        <item>Mine Permit</item>
+    </string-array>
+
+    <string-array name="banner_subtitle">
+        <item>Jurusan D3 Teknik Sipil, berumur 20–35 tahun, pengalaman minimal 1 tahun</item>
+        <item>Mengemudi menjadi aman dan nyaman</item>
+        <item>Ingin memasuki area tambang? Pakai Mine Permit, ya!</item>
+    </string-array>
+
+    <string-array name="history_name">
+        <item>Tahap DDT Internal</item>
+        <item>Tahap Temporary Mine Permit</item>
+        <item>Seleksi Berkas SIMPER</item>
+        <item>Ubah Profil</item>
+    </string-array>
+
+    <string-array name="history_date">
+        <item>13/08/2021</item>
+        <item>10/08/2021</item>
+        <item>5/08/2021</item>
+        <item>4/08/2021</item>
+    </string-array>
+
+    <string-array name="history_time">
+        <item>14.05</item>
+        <item>12.00</item>
+        <item>10.35</item>
+        <item>13.20</item>
+    </string-array>
 </resources>

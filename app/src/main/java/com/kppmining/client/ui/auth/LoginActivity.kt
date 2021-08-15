@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
 import com.kppmining.client.MainActivity
 import com.kppmining.client.databinding.ActivityLoginBinding
 import com.kppmining.core.domain.model.DummyAccount
@@ -15,6 +16,11 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        if (intent.hasExtra("logout_message")) {
+            val message = intent.getStringExtra("logout_message")
+            Snackbar.make(binding.root, message.toString(), Snackbar.LENGTH_SHORT).show()
+        }
 
         binding.btnLogin.setOnClickListener { setData() }
     }

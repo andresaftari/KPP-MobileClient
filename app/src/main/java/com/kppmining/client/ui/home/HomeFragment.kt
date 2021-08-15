@@ -11,14 +11,17 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.google.android.material.snackbar.Snackbar
 import com.kppmining.client.R
 import com.kppmining.client.databinding.FragmentHomeBinding
+import com.kppmining.client.utils.BannerAdapter
 import com.kppmining.client.utils.MenuAdapter
 import com.kppmining.core.domain.model.DummyAccount
+import com.kppmining.core.domain.model.DummyBanner
 import com.kppmining.core.domain.model.Menus
 
-@SuppressLint("SetTextI18n")
+@SuppressLint("SetTextI18n", "Recycle")
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
     private lateinit var menuAdapter: MenuAdapter
+    private lateinit var bannerAdapter: BannerAdapter
 
     private var bundle = Bundle()
 
@@ -36,8 +39,6 @@ class HomeFragment : Fragment() {
             icNotif.visibility = View.VISIBLE
         }
 
-        setNotification()
-
         if (activity?.intent!!.hasExtra("username")) {
             val accounts = activity?.intent!!.getParcelableExtra<DummyAccount>("username")
             binding.toolbar1.tvUser.text = "Hi, ${accounts!!.username}"
@@ -45,9 +46,33 @@ class HomeFragment : Fragment() {
             bundle.putParcelable("account", accounts)
         }
 
+        setBannerSlider()
+        setNotification()
         return binding.root
     }
 
+    // Banner Slider (no API)
+    private fun setBannerSlider() {
+        val bannerList = ArrayList<DummyBanner>()
+
+        val thumbs = resources.obtainTypedArray(R.array.banner_thumb)
+        val title = resources.getStringArray(R.array.banner_title)
+        val subtitle = resources.getStringArray(R.array.banner_subtitle)
+
+        for (i in title.indices) {
+            val banner = DummyBanner(thumbs.getResourceId(i, -1), title[i], subtitle[i])
+            bannerList.add(banner)
+        }
+
+        bannerAdapter = BannerAdapter(bannerList)
+
+        with(binding.ivSlider) {
+            startSliding(1500)
+            setImageListWithAdapter(bannerAdapter, bannerList.size)
+        }
+    }
+
+    // Notification UI Icon (no API)
     private fun setNotification() = binding.toolbar1.icNotif.setOnClickListener {
         Snackbar.make(
             requireView(),
@@ -56,6 +81,7 @@ class HomeFragment : Fragment() {
         ).show()
     }
 
+    // Main menu
     private fun fetchMenu() {
         val arrayOfMenus = arrayListOf(
             Menus(R.drawable.ic_simper, "Simper"),
@@ -72,11 +98,9 @@ class HomeFragment : Fragment() {
                 0 -> findNavController().navigate(
                     R.id.action_navigation_home_to_navigation_simper, bundle
                 )
-                1 -> Snackbar.make(
-                    requireView(),
-                    "${item.name} selected!",
-                    Snackbar.LENGTH_SHORT
-                ).show()
+                1 -> findNavController().navigate(
+                    R.id.action_navigation_home_to_navigation_permit, bundle
+                )
                 else -> Snackbar.make(
                     requireView(),
                     "Menu ${item.name} masih dalam pengembangan!",

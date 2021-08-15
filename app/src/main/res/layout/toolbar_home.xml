@@ -16,7 +16,7 @@
             android:id="@+id/civ_avatar"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@drawable/ic_profile_inactive"
+            android:src="@drawable/andre_preview"
             android:visibility="gone" />
 
         <TextView
@@ -30,8 +30,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
-            android:layout_gravity="end"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_gravity="end">
 
             <ImageView
                 android:id="@+id/ic_notif"
@@ -42,7 +42,8 @@
                 android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.appbar.MaterialToolbar>
 </com.google.android.material.appbar.AppBarLayout>
