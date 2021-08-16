@@ -13,7 +13,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KPPMobile">
         <activity
-            android:name=".ui.simper.SimperActivity"
+            android:name=".ui.simper.creation.SimperGroundTestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.simper.creation.SimperDdtActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.simper.creation.SimperTempPermitActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.simper.creation.SimperSelectionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.simper.creation.SimperBerkasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.simper.creation.SimperMcuActivity"
             android:exported="true" />
         <activity android:name=".ui.auth.LoginActivity" />
         <activity android:name=".SplashActivity">

@@ -7,6 +7,14 @@
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_simper.xml" value="0.3109649122807018" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_simper_berkas.xml" value="0.29912280701754385" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_simper_ddt.xml" value="0.3109649122807018" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_simper_ground_test.xml" value="0.29912280701754385" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_simper_ground_test_result.xml" value="0.3109649122807018" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_simper_mcu.xml" value="0.25" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_simper_selection.xml" value="0.3109649122807018" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_simper_temp_permit.xml" value="0.3109649122807018" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_simper_test_result.xml" value="0.3109649122807018" />
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/component_dialog_clear.xml" value="0.25" />
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/component_dialog_save.xml" value="0.25" />
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/component_testing.xml" value="0.1723684210526316" />
@@ -30,12 +38,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.15" />
-      </ProjectState>
-    </option>
   </component>
 </project>

@@ -45,11 +45,15 @@
 
     <string name="text_clearHistory">Hapus Semua Riwayat</string>
 
+    <string name="text_simper_creation">Pembuatan SIMPER</string>
+    <string name="text_status_simper_ok">Selamat! Anda telah berhasil melakukan validasi MCU</string>
+
     <!-- Button -->
     <string name="button_buat">Buat</string>
     <string name="button_login">Masuk</string>
     <string name="button_simpan">Simpan</string>
     <string name="button_logout">Keluar</string>
+    <string name="text_status_hint">Silahkan melanjutkan melakukan Input Berkas</string>
 
     <!-- Array -->
     <string-array name="banner_thumb">

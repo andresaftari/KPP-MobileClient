@@ -98,7 +98,7 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_marginTop="32dp"
-        android:scaleType="centerCrop"
+        android:scaleType="center"
         android:src="@drawable/diagram_simper"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
