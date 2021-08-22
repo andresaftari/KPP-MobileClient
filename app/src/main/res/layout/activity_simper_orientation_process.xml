@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.simper.creation.SimperMcuActivity">
+    tools:context=".ui.simper.creation.SimperOrientationProcessActivity">
 
     <!-- Action Bar -->
     <include
@@ -29,12 +29,12 @@
         app:layout_constraintTop_toBottomOf="@id/toolbar1" />
 
     <ImageView
-        android:id="@+id/step_1"
+        android:id="@+id/step_11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:scaleType="center"
-        android:src="@drawable/step_1"
+        android:src="@drawable/step_11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/creationTitle"
@@ -48,13 +48,13 @@
         android:layout_marginHorizontal="24dp"
         android:layout_marginTop="48dp"
         android:fontFamily="@font/nunito_bold"
-        android:text="@string/text_status_simper_mcu_ok"
+        android:text="@string/text_status_simper_orientation_process"
         android:textAlignment="center"
         android:textColor="#5BAE67"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/step_1" />
+        app:layout_constraintTop_toBottomOf="@id/step_11" />
 
     <TextView
         android:id="@+id/tv_status_hint"
@@ -62,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
         android:fontFamily="@font/nunito_bold"
-        android:text="@string/text_status_hint"
+        android:text="@string/text_status_hint_orientation_process"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@id/tv_status" />
 </androidx.constraintlayout.widget.ConstraintLayout>

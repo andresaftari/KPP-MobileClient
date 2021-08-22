@@ -27,6 +27,8 @@
     <string name="text_privacy">Kebijakan Privasi</string>
     <string name="text_about">Tentang KPP</string>
     <string name="text_simper">SIMPER</string>
+    <string name="text_nik">NIK</string>
+    <string name="text_number_sim">No. SIM</string>
 
     <string name="text_loginSubtitle1">Silahkan,</string>
     <string name="text_loginSubtitle2">Masuk dengan akun Anda</string>
@@ -41,19 +43,67 @@
     <string name="text_permit_subtitle">Ingin memasuki area tambang? Pakai Maine Permit, ya!</string>
 
     <string name="text_saved">Data Berhasil <font fgcolor="#5BAE67">Disimpan</font> !</string>
+    <string name="text_submitted">Data Berhasil <font fgcolor="#5BAE67">Dikirim</font> !</string>
     <string name="text_clearing"><font fgcolor="#FF0000">Hapus</font> Riwayat Aktivitas?</string>
 
     <string name="text_clearHistory">Hapus Semua Riwayat</string>
 
     <string name="text_simper_creation">Pembuatan SIMPER</string>
-    <string name="text_status_simper_ok">Selamat! Anda telah berhasil melakukan validasi MCU</string>
+    <string name="text_form_simper_creation">Formulir Pembuatan SIMPER</string>
+    <string name="text_number_ijazah">No. Ijazah</string>
+    <string name="text_scan_induction">Scan Pengajuan\nInduksi</string>
+    <string name="text_scan_pcr">Scan Hasil PCR</string>
+    <string name="text_scan_ktp">Scan KTP</string>
+    <string name="text_scan_sim">Scan SIM</string>
+    <string name="text_scan_mcu">Scan MCU</string>
+    <string name="text_scan_surat_pernyataan">Scan Surat\nPernyataan</string>
+    <string name="text_nama">Nama</string>
+    <string name="text_salinan_groundtest">Salinan Hasil\nGround Test</string>
+
+    <string name="text_status_simper_mcu_ok">Selamat! Anda telah berhasil melakukan validasi MCU</string>
+    <string name="text_status_simper_mcu">Silakan mengikuti validasi MCU (Medical Check-Up)</string>
+    <string name="text_status_hint">Silahkan melanjutkan melakukan Input Berkas</string>
+
+    <string name="text_status_simper_form_ok">Selamat! Anda telah berhasil melakukan input berkas</string>
+    <string name="text_status_hint_form">Silahkan melanjutkan ke proses induksi</string>
+
+    <string name="text_status_simper_induction_ok">Selamat! Anda telah berhasil melalui seleksi berkas</string>
+    <string name="text_status_hint_induction">Silahkan meminta Temporary Mine Permit kepada perusahaan dengan membawa KTP/SIM</string>
+
+    <string name="text_status_simper_ddt_ok">Selamat! Anda telah berhasil menyelesaikan tahap Temporary Mine Permit dan sekarang Anda berada di tahap DDT Internal</string>
+    <string name="text_status_hint_ddt">Silahkan melakukan proses DDT Internal ke perusahaan yang Anda tuju</string>
+
+    <string name="text_status_simper_groundtest">Anda berada di tahap Ground Test</string>
+    <string name="text_status_hint_groundtest">Silahkan melakukan pendaftaran dan ground test di L&amp;D KPP</string>
+
+    <string name="text_status_simper_input">Silakan menunggu validasi dari Admin</string>
+    <string name="text_status_hint_input">Validasi dari Admin L&amp;D</string>
+
+    <string name="text_status_simper_orientation_process">Silakan melakukan proses orientasi</string>
+    <string name="text_status_hint_orientation_process">Proses Orientasi ini dilakukan di lapangan</string>
+
+    <string name="text_status_simper_she">Silakan menunggu seleksi administrasi</string>
+    <string name="text_status_hint_she">Seleksi Administrasi ini dilakukan oleh SHE Dept</string>
+
+    <string name="text_status_simper_release_she">Mohon menunggu untuk proses penerbitan SIMPER</string>
+    <string name="text_status_hint_release_she">Penerbitan SIMPER ini dilakukan oleh SHE Dept</string>
+
+    <string name="text_hauling_permission">Ketentuan Jalan\nHauling</string>
+
+    <string name="text_clear_notif">Hapus semua notifikasi</string>
 
     <!-- Button -->
     <string name="button_buat">Buat</string>
     <string name="button_login">Masuk</string>
     <string name="button_simpan">Simpan</string>
     <string name="button_logout">Keluar</string>
-    <string name="text_status_hint">Silahkan melanjutkan melakukan Input Berkas</string>
+    <string name="button_send">Kirim</string>
+    <string name="button_choose_image">Pilih Gambar</string>
+    <string name="text_existing_employee">Karyawan Lama</string>
+    <string name="text_employee_type">Jenis Karyawan</string>
+    <string name="text_new_employee">Karyawan Baru</string>
+    <string name="text_fotocopy_simper">Fotocopy SIMPER</string>
+    <string name="text_groundtest_result">Hasil Ground Test</string>
 
     <!-- Array -->
     <string-array name="banner_thumb">
@@ -89,6 +139,48 @@
     </string-array>
 
     <string-array name="history_time">
+        <item>14.05</item>
+        <item>12.00</item>
+        <item>10.35</item>
+        <item>13.20</item>
+    </string-array>
+
+    <string-array name="notification_status">
+        <item>Proses</item>
+        <item>Peringatan</item>
+        <item>Informasi</item>
+        <item>Proses</item>
+    </string-array>
+
+    <string-array name="notification_status_icon">
+        <item>@drawable/ic_notif_process</item>
+        <item>@drawable/ic_notif_warning</item>
+        <item>@drawable/ic_notif_ok_or_info</item>
+        <item>@drawable/ic_notif_process</item>
+    </string-array>
+
+    <string-array name="notification_title">
+        <item>Penerbitan SIMPER</item>
+        <item>Segera lengkapi berkas!</item>
+        <item>Sukses</item>
+        <item>Penerbitan SIMPER</item>
+    </string-array>
+
+    <string-array name="notification_text">
+        <item>Penerbitan Simper dilakukan oleh SHE Dept. Mohon menunggu, ya.</item>
+        <item>Lengkapi berkas untuk pembuatan simper, segera!</item>
+        <item>Simper berhasil dibuat !</item>
+        <item>Penerbitan Simper dilakukan oleh SHE Dept. Mohon menunggu, ya.</item>
+    </string-array>
+
+    <string-array name="notification_date">
+        <item>13/08/2021</item>
+        <item>10/08/2021</item>
+        <item>5/08/2021</item>
+        <item>4/08/2021</item>
+    </string-array>
+
+    <string-array name="notification_time">
         <item>14.05</item>
         <item>12.00</item>
         <item>10.35</item>

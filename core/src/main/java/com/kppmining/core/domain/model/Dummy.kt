@@ -19,3 +19,13 @@ data class DummyHistory(
     val actionDate: String = "",
     val actionTime: String = ""
 ): Parcelable
+
+@Parcelize
+data class DummyNotification(
+    var notifIcon: Int = 0,
+    var notifStatus: String = "",
+    var notifDate: String = "",
+    var notifTime: String = "",
+    var notifTitle: String = "",
+    var notifText: String = ""
+): Parcelable

@@ -74,11 +74,7 @@ class HomeFragment : Fragment() {
 
     // Notification UI Icon (no API)
     private fun setNotification() = binding.toolbar1.icNotif.setOnClickListener {
-        Snackbar.make(
-            requireView(),
-            "Fitur notifikasi masih dalam pengembangan",
-            Snackbar.LENGTH_SHORT
-        ).show()
+       findNavController().navigate(R.id.action_navigation_home_to_navigation_notification, bundle)
     }
 
     // Main menu

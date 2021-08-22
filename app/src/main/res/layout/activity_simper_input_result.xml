@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.simper.creation.SimperMcuActivity">
+    tools:context=".ui.simper.creation.SimperInputResultActivity">
 
     <!-- Action Bar -->
     <include
@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/creationTitle"
+        android:id="@+id/testInputTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -29,40 +29,40 @@
         app:layout_constraintTop_toBottomOf="@id/toolbar1" />
 
     <ImageView
-        android:id="@+id/step_1"
+        android:id="@+id/step_8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:scaleType="center"
-        android:src="@drawable/step_1"
+        android:src="@drawable/step_8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/creationTitle"
+        app:layout_constraintTop_toBottomOf="@id/testInputTitle"
         tools:ignore="ContentDescription" />
 
     <!-- Body -->
     <TextView
-        android:id="@+id/tv_status"
+        android:id="@+id/tv_status_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
         android:layout_marginTop="48dp"
         android:fontFamily="@font/nunito_bold"
-        android:text="@string/text_status_simper_mcu_ok"
+        android:text="@string/text_status_simper_input"
         android:textAlignment="center"
         android:textColor="#5BAE67"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/step_1" />
+        app:layout_constraintTop_toBottomOf="@id/step_8" />
 
     <TextView
-        android:id="@+id/tv_status_hint"
+        android:id="@+id/tv_status_hint_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
         android:fontFamily="@font/nunito_bold"
-        android:text="@string/text_status_hint"
+        android:text="@string/text_status_hint_input"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/tv_status" />
+        app:layout_constraintTop_toBottomOf="@id/tv_status_input" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.simper.creation.SimperInputOrientationActivity">
+
+    <!-- Action Bar -->
+    <include
+        android:id="@+id/toolbar1"
+        layout="@layout/toolbar_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/testInputTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/text_simper_creation"
+        android:textAlignment="center"
+        android:textColor="#19863E"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar1" />
+
+    <ImageView
+        android:id="@+id/step_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scaleType="center"
+        android:src="@drawable/step_9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/testInputTitle"
+        tools:ignore="ContentDescription" />
+
+    <!-- Body -->
+    <TextView
+        android:id="@+id/scanHauling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_hauling_permission"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@id/layout_hauling"
+        app:layout_constraintEnd_toStartOf="@id/layout_hauling"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layout_hauling" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_hauling"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="220dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#EFEDEE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/step_9">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_hauling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/button_choose_image"
+            android:textColor="#B0B0B0"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_employee_type"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@id/btn_existing"
+        app:layout_constraintEnd_toStartOf="@id/btn_existing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_existing" />
+
+    <Button
+        android:id="@+id/btn_existing"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#EFEDEE"
+        android:text="@string/text_existing_employee"
+        android:textColor="#B0B0B0"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintTop_toBottomOf="@id/layout_hauling" />
+
+    <Button
+        android:id="@+id/btn_new"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#EFEDEE"
+        android:text="@string/text_new_employee"
+        android:textColor="#B0B0B0"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="-12dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_existing" />
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        android:id="@+id/layout_existing"-->
+    <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="58dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginEnd="32dp"-->
+    <!--        android:background="#EFEDEE"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/layout_hauling">-->
+
+    <!--        <com.google.android.material.textfield.TextInputEditText-->
+    <!--            android:id="@+id/edt_existing"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:focusable="false"-->
+    <!--            android:focusableInTouchMode="false"-->
+    <!--            android:cursorVisible="false"-->
+    <!--            android:textColor="#B0B0B0"-->
+    <!--            android:textSize="14sp"-->
+    <!--            android:text="@string/text_existing_employee" />-->
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        android:id="@+id/layout_new"-->
+    <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="58dp"-->
+    <!--        android:layout_marginTop="-8dp"-->
+    <!--        android:layout_marginEnd="32dp"-->
+    <!--        android:background="#EFEDEE"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/layout_existing">-->
+
+    <!--        <com.google.android.material.textfield.TextInputEditText-->
+    <!--            android:id="@+id/edt_new"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:focusable="false"-->
+    <!--            android:focusableInTouchMode="false"-->
+    <!--            android:cursorVisible="false"-->
+    <!--            android:textColor="#B0B0B0"-->
+    <!--            android:textSize="14sp"-->
+    <!--            android:text="@string/text_new_employee" />-->
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <TextView
+        android:id="@+id/fcSimper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_fotocopy_simper"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@id/layout_fc_simper"
+        app:layout_constraintEnd_toStartOf="@id/layout_fc_simper"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layout_fc_simper" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_fc_simper"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="220dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#EFEDEE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_new">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_fc_simper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/button_choose_image"
+            android:textColor="#B0B0B0"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/groundTestResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_groundtest_result"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@id/layout_gt_result"
+        app:layout_constraintEnd_toStartOf="@id/layout_gt_result"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layout_gt_result" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_gt_result"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="220dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#EFEDEE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_fc_simper">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_gt_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/button_choose_image"
+            android:textColor="#B0B0B0"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="64dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#B8DE9C"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/button_send"
+        android:textColor="#03821F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_gt_result" />
+</androidx.constraintlayout.widget.ConstraintLayout>

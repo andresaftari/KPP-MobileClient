@@ -14,4 +14,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/ddtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/text_simper_creation"
+        android:textAlignment="center"
+        android:textColor="#19863E"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar1" />
+
+    <ImageView
+        android:id="@+id/step_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scaleType="center"
+        android:src="@drawable/step_5_to_onsite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ddtTitle"
+        tools:ignore="ContentDescription" />
+
+    <!-- Body -->
+    <TextView
+        android:id="@+id/tv_status_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/text_status_simper_ddt_ok"
+        android:textAlignment="center"
+        android:textColor="#5BAE67"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/step_5" />
+
+    <TextView
+        android:id="@+id/tv_status_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/text_status_hint_ddt"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_status_selection" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,6 +26,14 @@
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
 
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_notification"
+            app:destination="@id/navigation_notification"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
         <argument
             android:name="name"
             app:argType="string"
@@ -61,4 +69,9 @@
         android:name="com.kppmining.client.ui.permit.PermitFragment"
         android:label="Mine Permit"
         tools:layout="@layout/fragment_permit"/>
+    <fragment
+        android:id="@+id/navigation_notification"
+        android:name="com.kppmining.client.ui.notifications.NotificationFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_notification" />
 </navigation>

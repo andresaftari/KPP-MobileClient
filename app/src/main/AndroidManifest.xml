@@ -13,6 +13,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KPPMobile">
         <activity
+            android:name=".ui.simper.creation.SimperReleaseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.simper.creation.SimperAdministrationSelectionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.simper.creation.SimperOrientationProcessActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.simper.creation.SimperValidationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.simper.creation.SimperInputOrientationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.simper.creation.SimperInputResultActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.simper.creation.SimperGroundTestActivity"
             android:exported="true" />
         <activity
