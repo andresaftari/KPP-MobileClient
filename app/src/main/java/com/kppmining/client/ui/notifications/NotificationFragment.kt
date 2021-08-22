@@ -1,5 +1,6 @@
 package com.kppmining.client.ui.notifications
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -58,14 +59,14 @@ class NotificationFragment : Fragment() {
             .setView(dialogBinding.root)
             .setCancelable(false)
             .setPositiveButton("Hapus") { dialog, _ ->
-                clearHistoryList()
+                clearNotificationList()
                 dialog.dismiss()
             }
             .setNegativeButton("Tidak") { dialog, _ -> dialog.dismiss() }
             .show()
     }
 
-    private fun clearHistoryList() {
+    private fun clearNotificationList() {
         arrOfNotification.clear()
 
         notificationAdapter = NotificationAdapter(arrOfNotification)
@@ -82,6 +83,7 @@ class NotificationFragment : Fragment() {
         ).show()
     }
 
+    @SuppressLint("Recycle")
     private fun setNotificationList() {
         val arrOfIcon = resources.obtainTypedArray(R.array.notification_status_icon)
         val arrOfText = resources.getStringArray(R.array.notification_text)
