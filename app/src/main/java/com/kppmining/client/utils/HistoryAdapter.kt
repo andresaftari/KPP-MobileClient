@@ -12,9 +12,8 @@ class HistoryAdapter(private val items: ArrayList<DummyHistory>) :
         ItemHistoryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
     )
 
-    override fun onBindViewHolder(holder: HistoryViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: HistoryViewHolder, position: Int) =
         with(holder) { bind(items[position]) }
-    }
 
     override fun getItemCount() = items.size
 

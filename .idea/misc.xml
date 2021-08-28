@@ -5,8 +5,23 @@
       <map>
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/drawable/ic_notif_info.xml" value="0.3162393162393162" />
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/drawable/line_green.xml" value="0.32456140350877194" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_administration_and_selection_simper.xml" value="0.30299145299145297" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_ddt_input_result_simper.xml" value="0.2914529914529915" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_ddt_internal_simper.xml" value="0.30299145299145297" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_form_creation_simper.xml" value="0.30299145299145297" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_form_input_simper.xml" value="0.2914529914529915" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_ground_registration_simper.xml" value="0.2914529914529915" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_ground_result_input_simper.xml" value="0.30299145299145297" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_ground_test_result_check_simper.xml" value="0.30299145299145297" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_induction_process_simper.xml" value="0.30299145299145297" />
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_mcu_validation_simper.xml" value="0.33" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_orientation_input_simper.xml" value="0.2914529914529915" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_orientation_processing_simper.xml" value="0.30299145299145297" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_orientation_validation_simper.xml" value="0.30299145299145297" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_pcr_check_simper.xml" value="0.33" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_releasing_simper.xml" value="0.30299145299145297" />
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_simper.xml" value="0.3109649122807018" />
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_simper_administration_selection.xml" value="0.30299145299145297" />
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_simper_berkas.xml" value="0.33" />
@@ -22,6 +37,8 @@
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_simper_temp_permit.xml" value="0.33" />
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_simper_test_result.xml" value="0.3109649122807018" />
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_simper_validation.xml" value="0.30299145299145297" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_temporary_permit_simper.xml" value="0.30299145299145297" />
+        <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/activity_threadmill_check_simper.xml" value="0.25" />
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/component_dialog_clear.xml" value="0.25" />
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/component_dialog_save.xml" value="0.25" />
         <entry key="..\:/CODING/Android/ProjectKPP/app/src/main/res/layout/component_dialog_submit.xml" value="0.25" />
@@ -53,7 +70,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.33" />
+        <option name="scale" value="0.18" />
       </ProjectState>
     </option>
   </component>

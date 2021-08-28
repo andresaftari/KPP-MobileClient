@@ -67,7 +67,7 @@
     <string name="text_status_simper_form_ok">Selamat! Anda telah berhasil melakukan input berkas</string>
     <string name="text_status_hint_form">Silahkan melanjutkan ke proses induksi</string>
 
-    <string name="text_status_simper_induction_ok">Selamat! Anda telah berhasil melalui seleksi berkas</string>
+    <string name="text_status_simper_induction_ok">Anda berada di tahap Temporary Mine Permit</string>
     <string name="text_status_hint_induction">Silahkan meminta Temporary Mine Permit kepada perusahaan dengan membawa KTP/SIM</string>
 
     <string name="text_status_simper_ddt_ok">Selamat! Anda telah berhasil menyelesaikan tahap Temporary Mine Permit dan sekarang Anda berada di tahap DDT Internal</string>
@@ -92,6 +92,27 @@
 
     <string name="text_clear_notif">Hapus semua notifikasi</string>
 
+    <string name="text_employee_type">Jenis Karyawan</string>
+    <string name="text_existing_employee">Karyawan Lama</string>
+    <string name="text_new_employee">Karyawan Baru</string>
+
+    <string name="text_fotocopy_simper">Fotocopy SIMPER</string>
+    <string name="text_groundtest_result">Salinan Hasil\nGround Test</string>
+
+    <string name="text_scan_threadmill">Scan Hasil\nThreadmill</string>
+
+    <string name="text_pcr_date">Tanggal PCR</string>
+    <string name="text_date_format">DD-MM-YYYY</string>
+    <string name="text_positive">Positif</string>
+    <string name="text_negative">Negatif</string>
+    <string name="text_hasil_pcr">Hasil PCR</string>
+
+    <string name="text_scan_ijazah">Scan Ijazah</string>
+
+    <string name="text_input_nrp">Masukan NRP</string>
+    <string name="text_input_score">Masukan Nilai\nAkhir</string>
+    <string name="text_department">Department</string>
+
     <!-- Button -->
     <string name="button_buat">Buat</string>
     <string name="button_login">Masuk</string>
@@ -99,11 +120,7 @@
     <string name="button_logout">Keluar</string>
     <string name="button_send">Kirim</string>
     <string name="button_choose_image">Pilih Gambar</string>
-    <string name="text_existing_employee">Karyawan Lama</string>
-    <string name="text_employee_type">Jenis Karyawan</string>
-    <string name="text_new_employee">Karyawan Baru</string>
-    <string name="text_fotocopy_simper">Fotocopy SIMPER</string>
-    <string name="text_groundtest_result">Hasil Ground Test</string>
+    <string name="text_download">Download</string>
 
     <!-- Array -->
     <string-array name="banner_thumb">

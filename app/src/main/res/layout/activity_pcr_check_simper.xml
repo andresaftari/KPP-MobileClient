@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.simper.create.PcrCheckSimperActivity">
+
+    <!-- Action Bar -->
+    <include
+        android:id="@+id/toolbar1"
+        layout="@layout/toolbar_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/creationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/text_form_simper_creation"
+        android:textAlignment="center"
+        android:textColor="#19863E"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar1" />
+
+    <ImageView
+        android:id="@+id/step_2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:padding="2dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/step2_new_m"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/creationTitle"
+        tools:ignore="ContentDescription" />
+
+    <!-- Body -->
+    <TextView
+        android:id="@+id/pcr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_pcr_date"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_pcr_date"
+        app:layout_constraintEnd_toStartOf="@id/layout_pcr_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layout_pcr_date" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_pcr_date"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="220dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/step_2"
+        app:placeholderTextColor="#B0B0B0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:text="@string/text_date_format"
+            android:textColor="#B0B0B0" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_hasil_pcr"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@id/btn_negatif"
+        app:layout_constraintEnd_toStartOf="@id/btn_negatif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_negatif" />
+
+    <Button
+        android:id="@+id/btn_negatif"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#EFEDEE"
+        android:text="@string/text_negative"
+        android:textColor="#B0B0B0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_pcr_date" />
+
+    <Button
+        android:id="@+id/btn_positif"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-12dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#EFEDEE"
+        android:text="@string/text_positive"
+        android:textColor="#B0B0B0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_negatif" />
+
+    <TextView
+        android:id="@+id/scanPCR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_scan_pcr"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@id/layout_scan_pcr"
+        app:layout_constraintEnd_toStartOf="@id/layout_scan_pcr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layout_scan_pcr" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_scan_pcr"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="220dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#EFEDEE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_positif">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_scan_pcr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/button_choose_image"
+            android:textColor="#B0B0B0"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="64dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#B8DE9C"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/button_send"
+        android:textColor="#03821F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_scan_pcr" />
+</androidx.constraintlayout.widget.ConstraintLayout>

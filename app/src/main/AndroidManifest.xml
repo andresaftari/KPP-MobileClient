@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,43 +15,57 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KPPMobile">
         <activity
-            android:name=".ui.simper.creation.SimperReleaseActivity"
+            android:name=".ui.simper.create.ReleasingSimperActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.simper.creation.SimperAdministrationSelectionActivity"
+            android:name=".ui.simper.create.AdministrationAndSelectionSimperActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.simper.creation.SimperOrientationProcessActivity"
+            android:name=".ui.simper.create.OrientationProcessingSimperActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.simper.creation.SimperValidationActivity"
+            android:name=".ui.simper.create.OrientationValidationSimperActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.simper.creation.SimperInputOrientationActivity"
+            android:name=".ui.simper.create.OrientationInputSimperActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.simper.creation.SimperInputResultActivity"
+            android:name=".ui.simper.create.GroundTestResultCheckSimperActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.simper.creation.SimperGroundTestActivity"
+            android:name=".ui.simper.create.GroundResultInputSimperActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.simper.creation.SimperDdtActivity"
+            android:name=".ui.simper.create.GroundRegistrationSimperActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.simper.creation.SimperTempPermitActivity"
+            android:name=".ui.simper.create.DdtInputResultSimperActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.simper.creation.SimperSelectionActivity"
+            android:name=".ui.simper.create.DdtInternalSimperActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.simper.creation.SimperBerkasActivity"
+            android:name=".ui.simper.create.TemporaryPermitSimperActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.simper.creation.SimperMcuActivity"
+            android:name=".ui.simper.create.InductionProcessSimperActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.simper.create.FormInputSimperActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.simper.create.McuValidationSimperActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.simper.create.PcrCheckSimperActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.simper.create.ThreadmillCheckSimperActivity"
             android:exported="true" />
         <activity android:name=".ui.auth.LoginActivity" />
-        <activity android:name=".SplashActivity">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

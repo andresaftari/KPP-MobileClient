@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.simper.create.DdtInputResultSimperActivity">
+
+    <!-- Action Bar -->
+    <include
+        android:id="@+id/toolbar1"
+        layout="@layout/toolbar_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/formTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/text_form_simper_creation"
+        android:textAlignment="center"
+        android:textColor="#19863E"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar1" />
+
+    <ImageView
+        android:id="@+id/step_8"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/step8_new_m"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/formTitle"
+        tools:ignore="ContentDescription" />
+
+    <!-- Body -->
+    <TextView
+        android:id="@+id/nrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_input_nrp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_nrp"
+        app:layout_constraintEnd_toStartOf="@id/layout_nrp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layout_nrp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_nrp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="220dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/step_8"
+        app:placeholderText="KLXXX"
+        app:placeholderTextColor="#B0B0B0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_nrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_input_score"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_score"
+        app:layout_constraintEnd_toStartOf="@id/layout_score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layout_score" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_score"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="220dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_nrp"
+        app:placeholderText="85"
+        app:placeholderTextColor="#B0B0B0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_fullname"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_name"
+        app:layout_constraintEnd_toStartOf="@id/layout_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layout_name" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="220dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_score"
+        app:placeholderText="Nama Lengkap"
+        app:placeholderTextColor="#B0B0B0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/dept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_department"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_dept"
+        app:layout_constraintEnd_toStartOf="@id/layout_dept"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layout_dept" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_dept"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="220dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_name"
+        app:placeholderText="Departemen"
+        app:placeholderTextColor="#B0B0B0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_dept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="64dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#B8DE9C"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/button_send"
+        android:textColor="#03821F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_dept" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="64dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#A59CA6"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/text_download"
+        android:drawableEnd="@drawable/ic_download"
+        android:drawableTint="#C6C6C6"
+        android:textColor="#C6C6C6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_submit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

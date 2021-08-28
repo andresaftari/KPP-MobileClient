@@ -26,7 +26,6 @@ class NotificationFragment : Fragment() {
     private lateinit var dialogBinding: ComponentDialogClearBinding
 
     private val arrOfNotification = arrayListOf<DummyNotification>()
-
     private var account = DummyAccount()
 
     override fun onCreateView(

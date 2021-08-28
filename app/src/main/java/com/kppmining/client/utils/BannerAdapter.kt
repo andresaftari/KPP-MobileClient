@@ -20,9 +20,8 @@ class BannerAdapter(private val items: ArrayList<DummyBanner>) :
         )
     )
 
-    override fun onBindViewHolder(holder: SliderViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: SliderViewHolder, position: Int) =
         with(holder) { bind(items[position]) }
-    }
 
     override fun getItemCount() = items.size
 

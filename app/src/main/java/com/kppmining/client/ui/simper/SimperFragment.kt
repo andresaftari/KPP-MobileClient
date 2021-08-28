@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.kppmining.client.MainActivity
 import com.kppmining.client.databinding.FragmentSimperBinding
-import com.kppmining.client.ui.simper.creation.*
+import com.kppmining.client.ui.simper.create.*
 import com.kppmining.core.domain.model.DummyAccount
 
 class SimperFragment : Fragment() {
@@ -26,7 +26,7 @@ class SimperFragment : Fragment() {
         returnUsername()
 
         // Sebelum ada API, status ada 1 - 13
-        val statusSimper = 9
+        val statusSimper = 2
 
         binding.btnSimper.setOnClickListener {
             when (statusSimper) {
@@ -34,7 +34,7 @@ class SimperFragment : Fragment() {
                     startActivity(
                         Intent(
                             requireContext(),
-                            SimperMcuActivity::class.java
+                            ThreadmillCheckSimperActivity::class.java
                         ).putExtra("username", account)
                     )
                     activity?.finish()
@@ -43,7 +43,7 @@ class SimperFragment : Fragment() {
                     startActivity(
                         Intent(
                             requireContext(),
-                            SimperBerkasActivity::class.java
+                            PcrCheckSimperActivity::class.java
                         ).putExtra("username", account)
                     )
                     activity?.finish()
@@ -52,16 +52,17 @@ class SimperFragment : Fragment() {
                     startActivity(
                         Intent(
                             requireContext(),
-                            SimperSelectionActivity::class.java
+                            McuValidationSimperActivity::class.java
                         ).putExtra("username", account)
                     )
+
                     activity?.finish()
                 }
                 4 -> {
                     startActivity(
                         Intent(
                             requireContext(),
-                            SimperTempPermitActivity::class.java
+                            FormInputSimperActivity::class.java
                         ).putExtra("username", account)
                     )
                     activity?.finish()
@@ -70,7 +71,7 @@ class SimperFragment : Fragment() {
                     startActivity(
                         Intent(
                             requireContext(),
-                            SimperDdtActivity::class.java
+                            InductionProcessSimperActivity::class.java
                         ).putExtra("username", account)
                     )
                     activity?.finish()
@@ -79,7 +80,7 @@ class SimperFragment : Fragment() {
                     startActivity(
                         Intent(
                             requireContext(),
-                            SimperGroundTestActivity::class.java
+                            TemporaryPermitSimperActivity::class.java
                         ).putExtra("username", account)
                     )
                     activity?.finish()
@@ -88,7 +89,7 @@ class SimperFragment : Fragment() {
                     startActivity(
                         Intent(
                             requireContext(),
-                            SimperTestResultActivity::class.java
+                            DdtInternalSimperActivity::class.java
                         ).putExtra("username", account)
                     )
                     activity?.finish()
@@ -97,7 +98,7 @@ class SimperFragment : Fragment() {
                     startActivity(
                         Intent(
                             requireContext(),
-                            SimperInputResultActivity::class.java
+                            DdtInputResultSimperActivity::class.java
                         ).putExtra("username", account)
                     )
                     activity?.finish()
@@ -106,7 +107,7 @@ class SimperFragment : Fragment() {
                     startActivity(
                         Intent(
                             requireContext(),
-                            SimperInputOrientationActivity::class.java
+                            GroundRegistrationSimperActivity::class.java
                         ).putExtra("username", account)
                     )
                     activity?.finish()
@@ -115,7 +116,7 @@ class SimperFragment : Fragment() {
                     startActivity(
                         Intent(
                             requireContext(),
-                            SimperValidationActivity::class.java
+                            GroundResultInputSimperActivity::class.java
                         ).putExtra("username", account)
                     )
                     activity?.finish()
@@ -124,7 +125,7 @@ class SimperFragment : Fragment() {
                     startActivity(
                         Intent(
                             requireContext(),
-                            SimperOrientationProcessActivity::class.java
+                            GroundTestResultCheckSimperActivity::class.java
                         ).putExtra("username", account)
                     )
                     activity?.finish()
@@ -133,14 +134,49 @@ class SimperFragment : Fragment() {
                     startActivity(
                         Intent(
                             requireContext(),
-                            SimperAdministrationSelectionActivity::class.java
+                            OrientationInputSimperActivity::class.java
+                        ).putExtra("username", account)
+                    )
+                    activity?.finish()
+                }
+                13 -> {
+                    startActivity(
+                        Intent(
+                            requireContext(),
+                            OrientationValidationSimperActivity::class.java
+                        ).putExtra("username", account)
+                    )
+                    activity?.finish()
+                }
+                14 -> {
+                    startActivity(
+                        Intent(
+                            requireContext(),
+                            OrientationProcessingSimperActivity::class.java
+                        ).putExtra("username", account)
+                    )
+                    activity?.finish()
+                }
+                15 -> {
+                    startActivity(
+                        Intent(
+                            requireContext(),
+                            AdministrationAndSelectionSimperActivity::class.java
+                        ).putExtra("username", account)
+                    )
+                    activity?.finish()
+                }
+                16 -> {
+                    startActivity(
+                        Intent(
+                            requireContext(),
+                            ReleasingSimperActivity::class.java
                         ).putExtra("username", account)
                     )
                     activity?.finish()
                 }
             }
         }
-
         return binding.root
     }
 
