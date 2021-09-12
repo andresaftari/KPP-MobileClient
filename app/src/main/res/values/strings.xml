@@ -45,6 +45,7 @@
     <string name="text_saved">Data Berhasil <font fgcolor="#5BAE67">Disimpan</font> !</string>
     <string name="text_submitted">Data Berhasil <font fgcolor="#5BAE67">Dikirim</font> !</string>
     <string name="text_clearing"><font fgcolor="#FF0000">Hapus</font> Riwayat Aktivitas?</string>
+    <string name="text_clearing_notif"><font fgcolor="#FF0000">Hapus</font> Notifikasi?</string>
 
     <string name="text_clearHistory">Hapus Semua Riwayat</string>
 
@@ -121,6 +122,7 @@
     <string name="button_send">Kirim</string>
     <string name="button_choose_image">Pilih Gambar</string>
     <string name="text_download">Download</string>
+    <string name="text_induction_soal">Soal soal induksi</string>
 
     <!-- Array -->
     <string-array name="banner_thumb">

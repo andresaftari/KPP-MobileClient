@@ -25,8 +25,8 @@ class SimperFragment : Fragment() {
         setHasOptionsMenu(true)
         returnUsername()
 
-        // Sebelum ada API, status ada 1 - 13
-        val statusSimper = 2
+        // Sebelum ada API, status ada 1 - 16
+        val statusSimper = 16
 
         binding.btnSimper.setOnClickListener {
             when (statusSimper) {

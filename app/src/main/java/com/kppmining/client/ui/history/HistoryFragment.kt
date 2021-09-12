@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 import com.kppmining.client.R
-import com.kppmining.client.databinding.ComponentDialogClearBinding
+import com.kppmining.client.databinding.ComponentDialogClearActivityBinding
 import com.kppmining.client.databinding.FragmentHistoryBinding
 import com.kppmining.client.utils.HistoryAdapter
 import com.kppmining.core.domain.model.DummyHistory
@@ -17,7 +17,7 @@ import com.kppmining.core.domain.model.DummyHistory
 class HistoryFragment : Fragment() {
     private lateinit var binding: FragmentHistoryBinding
     private lateinit var historyAdapter: HistoryAdapter
-    private lateinit var dialogBinding: ComponentDialogClearBinding
+    private lateinit var dialogBinding: ComponentDialogClearActivityBinding
 
     private val arrOfHistory = arrayListOf<DummyHistory>()
 
@@ -36,7 +36,7 @@ class HistoryFragment : Fragment() {
 
     private fun startDialog() {
         val layoutInflater = LayoutInflater.from(requireContext())
-        dialogBinding = ComponentDialogClearBinding.inflate(layoutInflater)
+        dialogBinding = ComponentDialogClearActivityBinding.inflate(layoutInflater)
 
         MaterialAlertDialogBuilder(requireContext())
             .setView(dialogBinding.root)

@@ -14,7 +14,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 import com.kppmining.client.MainActivity
 import com.kppmining.client.R
-import com.kppmining.client.databinding.ComponentDialogClearBinding
+import com.kppmining.client.databinding.ComponentDialogClearNotifBinding
 import com.kppmining.client.databinding.FragmentNotificationBinding
 import com.kppmining.client.utils.NotificationAdapter
 import com.kppmining.core.domain.model.DummyAccount
@@ -23,7 +23,7 @@ import com.kppmining.core.domain.model.DummyNotification
 class NotificationFragment : Fragment() {
     private lateinit var binding: FragmentNotificationBinding
     private lateinit var notificationAdapter: NotificationAdapter
-    private lateinit var dialogBinding: ComponentDialogClearBinding
+    private lateinit var dialogBinding: ComponentDialogClearNotifBinding
 
     private val arrOfNotification = arrayListOf<DummyNotification>()
     private var account = DummyAccount()
@@ -52,7 +52,7 @@ class NotificationFragment : Fragment() {
 
     private fun startDialog() {
         val layoutInflater = LayoutInflater.from(requireContext())
-        dialogBinding = ComponentDialogClearBinding.inflate(layoutInflater)
+        dialogBinding = ComponentDialogClearNotifBinding.inflate(layoutInflater)
 
         MaterialAlertDialogBuilder(requireContext())
             .setView(dialogBinding.root)
